@@ -1,16 +1,36 @@
-import React from 'react';
+import React from "react";
 import OurMissionImage from "../assets/mission.png";
 
 export default function OurMission() {
-	return (
-		<div className='pb-32  max-sm:pb-20 lg:pt-0 sm:pt-[500px] pt-[500px] max-xl:text-center flex flex-col w-[85%] mx-auto' id='our-mission'>
-			<h1 className='text-4xl md:text-6xl max-sm:text-center pb-10 font-semibold'>OUR MISSION</h1>
-			<div className='flex flex-col lg:flex-row items-center gap-10'>
-				<p className='text-lg md:text-2xl w-full md:w-[60%] text-justify'>
-					Our mission is to simplify lives, generate employment, and foster environmental sustainability through innovative technological solutions. We strive to meet the needs of our community and the environment, ensuring that technology acts as a force for positive change and sustainable development.
-				</p>
-				<img src={OurMissionImage} alt="" className='rounded-2xl w-[400px]' />
-			</div>
-		</div>
-	)
+  return (
+    <div className="w-full py-20 bg-white" id="our-mission">
+      <div className="max-w-7xl mx-auto">
+        {/* Section with Title and Content */}
+        <div className="w-[100%] flex flex-col lg:flex-row items-center gap-20px">
+          {/* Left Column with Title and Text */}
+          <div className="lg:w-3/5 ">
+            <h3 className="text-4xl sm:text-5xl font-semibold text-navy-900 mb-8">
+              OUR MISSION
+            </h3>
+            <p className="text-lg md:text-[1.6rem] text-gray-700 leading-relaxed">
+              Our mission is to simplify lives, generate employment, and foster
+              environmental sustainability through innovative technological
+              solutions. We strive to meet the needs of our community and the
+              environment, ensuring that technology acts as a force for positive
+              change and sustainable development.
+            </p>
+          </div>
+
+          {/* Right Column with Image */}
+          <div className="lg:w-2/5 flex items-center justify-center">
+            <img
+              src={OurMissionImage}
+              alt="Our Mission"
+              className="w-full max-w-[500px] object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
