@@ -1,31 +1,55 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
-	return (
-		<div className='xl:pb-24 max-sm:pt-2 max-sm:pb-20 xl:pt-10 w-[95%] mx-auto'>
-			<section className="relative h-auto w-full bg-[#222831] min-h-[400px] overflow-hidden px-5 mt-10 lg:px-20">
+  return (
+    <div className="w-full max-w-[1400px] mx-auto py-24 px-8 flex flex-col lg:flex-row items-start justify-between bg-white">
+      
+      {/* Left Section */}
+      <div className="lg:w-1/2 px-20">
+        <h1 
+          className="text-[77px] font-bold text-navy-900 leading-[1.2] tracking-[-3.31px] font-dmSans"
+        >
+          We are <span className="text-blue-500">always</span> there <br /> for your need
+        </h1>
+        <p className="text-gray-600 mt-6 text-lg leading-relaxed max-w-lg">
+          Evool Foundation harnesses technology for social good, driving 
+          change through digital identity, elderly care, health solutions, 
+          education, and community impact. We innovate for humanity and the 
+          planet, making tech work for a better world.
+        </p>
+        <Link
+          to="/contact-us"
+          className="mt-8 inline-block bg-blue-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-600 transition-all"
+        >
+          Contact us
+        </Link>
+      </div>
 
-				<div className="absolute top-0 right-0 h-[30%] w-[30%] bg-gradient-to-tr from-emerald-200 to-emerald-500 blur-[130px]">
-				</div>
-				<div className="absolute bottom-0 left-0 h-[30%] w-[20%] bg-gradient-to-bl from-emerald-200 to-emerald-500 blur-[130px]">
-				</div>
-				<div className="p-5  grid grid-cols-1 lg:grid-cols-2 gap-10 lg:px-5 lg:py-10">
-					<div>
-						<h1 className="text-6xl lg:text-4xl pt-16 font-bold text-white ">We are <span className="text-pink-500">always</span> there</h1>
-						<h1 className="text-3xl lg:text-4xl  font-bold text-white mt-4 ">for your need</h1>
-					</div>
-					<div>
-						<p className=" text-gray-300 sm:text-sm">
-							Evool Foundation harnesses technology for social good, driving change through digital identity, elderly care, health solutions, education, and community impact. We innovate for humanity and the planet, making tech work for a better world.
-						</p>
-						<Link to="/contact-us" className=" text-pink-500 mt-4 uppercase ">Contact us</Link>
-					</div>
-				</div>
-			</section>
-			<img src="https://utfs.io/f/df007e37-3b42-4ada-a272-8d5e63807d6b-k6t0zq.jpg" alt="" className="sm:w-[80%] sm:h-auto w-[95%] mx-auto sm:-translate-y-32 -translate-y-10 hidden sm:block" />
-			{/* <img src="/hero_pic.jpg" alt="" className="w-[70%] sm:h-auto  mx-auto sm:-translate-y-32 -translate-y-32 sm:hidden" /> */}
-
-		</div>
-	)
+      {/* Right Section - Image with Text Overlay */}
+      <div className="lg:w-1/2 mt-12 lg:mt-0 relative">
+        <div className="relative rounded-lg overflow-hidden shadow-lg max-w-[500px]">
+          <img
+            src="/hero_image.jpg"
+            alt="Event"
+            className="w-full h-auto rounded-lg"
+          />
+          <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-6 text-white">
+            <p className="text-sm font-light opacity-80">Evool Foundation - Event</p>
+            <h2 className="text-2xl font-semibold mt-1 leading-tight">
+              Technological development <br /> towards society
+            </h2>
+          </div>
+        </div>
+        
+        {/* Indicator dots
+        <div className="flex justify-center gap-2 mt-4">
+          <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+          <div className="w-12 h-2 rounded-full bg-blue-500"></div>
+          <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+        </div> */}
+      </div>
+      
+    </div>
+  );
 }

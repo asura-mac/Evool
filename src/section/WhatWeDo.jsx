@@ -3,7 +3,7 @@ import React from 'react'
 export default function WhatWeDo() {
   return (
     <div className='h-[1000px] relative pt-0'>
-      <div className=' bg-gradient-to-b mt-0 -translate-y-[1px] from-[#48bed9] to-[#ffffff] tilted-bottom-part h-[550px]'></div>
+      <div className= 'tilted-bottom-part h-[550px]'></div>
       <div className='flex-col  flex items-center'>
         <div className='md:pt-64  md:pb-20 w-[85%] mx-auto absolute -top-20 z-20 pt-36'>
           <h1 className='text-4xl sm:text-6xl  max-sm:text-center pb-16 font-semibold'>What We Do</h1>
