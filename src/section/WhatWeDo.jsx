@@ -1,28 +1,70 @@
-import React from 'react'
+import React from "react";
+import BusinessGrowthImage from "../assets/about.png";
+import JobOpportunitiesImage from "../assets/about.png";
+import SustainabilityImage from "../assets/about.png";
 
 export default function WhatWeDo() {
   return (
-    <div className='h-[1000px] relative pt-0'>
-      <div className= 'tilted-bottom-part h-[550px]'></div>
-      <div className='flex-col  flex items-center'>
-        <div className='md:pt-64  md:pb-20 w-[85%] mx-auto absolute -top-20 z-20 pt-36'>
-          <h1 className='text-4xl sm:text-6xl  max-sm:text-center pb-16 font-semibold'>What We Do</h1>
-          <div className='flex flex-col lg:flex-row justify-center mx-auto gap-5'>
-            <div className='flex flex-col  w-full xl:w-1/3 pt-20 p-12 border-[4px] rounded-xl shadow-[-3px_12px_46px_-2px_rgba(0,_0,_0,_0.3)] border-red-500 border-dotted bg-white'>
-              <h1 className='sm:text-3xl text-2xl font-bold pb-8 max-sm:text-center'>Develop User Friendly Platforms</h1>
-              <p className='sm:text-xl text-sm pb-10 max-sm:text-center'>We create intuitive platforms that address everyday challenges, making life easier and more efficient. Our solutions are designed to offer practical benefits and improve daily routines.</p>
-            </div>
-            <div className='flex flex-col w-full xl:w-1/3 pt-20 p-12 border-[4px] rounded-xl shadow-[-3px_12px_46px_-2px_rgba(0,_0,_0,_0.3)] border-red-500 border-dotted bg-white'>
-              <h1 className='sm:text-3xl text-2xl font-bold pb-8 max-md:text-nowrap max-sm:text-center'>Create Job <br className='md:hidden' /> Opportunities</h1>
-              <p className='sm:text-xl text-sm pb-10 max-sm:text-center'>A core objective is to generate employment through the platforms we develop. By providing tools that help individuals and businesses operate more efficiently, we open doors to financial independence and long-term growth.</p>
-            </div>
-            <div className='flex flex-col w-full xl:w-1/3 pt-20 p-12 border-[4px] rounded-xl shadow-[-3px_12px_46px_-2px_rgba(0,_0,_0,_0.3)] border-red-500 border-dotted bg-white'>
-              <h1 className='sm:text-3xl text-2xl font-bold pb-8  max-sm:text-center '>Promote Environmental <br /> Sustainability</h1>
-              <p className='sm:text-xl text-sm pb-10 max-sm:text-center'>We design eco-friendly solutions that encourage sustainable living practices, contributing to environmental conservation.</p>
-            </div>
-          </div>
+    <div className="w-full py-20 bg-white">
+      {/* Section Title */}
+      <h1 className="text-4xl sm:text-6xl font-semibold text-center mb-16">
+        What We Do
+      </h1>
+
+      {/* Cards Section */}
+      {/* because of justify items the third card is appearing in the center line of all images */}
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 w-[85%] mx-auto">
+        {/* Card 1 - Business Growth */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
+          <img
+            src={BusinessGrowthImage}
+            alt="Business Growth"
+            className="w-full h-48 object-cover rounded-xl mb-6"
+          />
+          <h2 className="text-xl font-semibold mb-4">
+            How A Website Growths your Business
+          </h2>
+          <p className="text-gray-600">
+            We create intuitive platforms that address everyday challenges,
+            making life easier and more efficient. Our solutions are designed to
+            offer practical benefits and improve daily routines.
+          </p>
+        </div>
+
+        {/* Card 2 - Job Opportunities */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
+          <img
+            src={JobOpportunitiesImage}
+            alt="Job Opportunities"
+            className="w-full h-48 object-cover rounded-xl mb-6"
+          />
+          <h2 className="text-xl font-semibold mb-4">
+            Create Job Opportunities
+          </h2>
+          <p className="text-gray-600">
+            A core objective is to generate employment through the platforms we
+            develop. By providing tools that help individuals and businesses
+            operate more efficiently, we open doors to financial independence
+            and long-term growth.
+          </p>
+        </div>
+
+        {/* Card 3 - Environmental Sustainability */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
+          <img
+            src={SustainabilityImage}
+            alt="Environmental Sustainability"
+            className="w-full h-48 object-cover rounded-xl mb-6"
+          />
+          <h2 className="text-xl font-semibold mb-4">
+            Promote Environmental Sustainability
+          </h2>
+          <p className="text-gray-600">
+            We design eco-friendly solutions that encourage sustainable living
+            practices, contributing to environmental conservation.
+          </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
