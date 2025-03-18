@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div className="w-full max-w-[1400px] mx-auto py-24 px-8 flex flex-col lg:flex-row items-start justify-between bg-white">
+    <div className="w-full max-w-[1400px] mx-auto py-24 px-8 mt-24 flex flex-col lg:flex-row items-start justify-between bg-white">
       
       {/* Left Section */}
       <div className="lg:w-1/2 px-20">
