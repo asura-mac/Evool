@@ -11,30 +11,20 @@ export const menuItems = [
 ];
 
 export default function Navbar() {
-  const [bgColor, setBgColor] = useState("bg-white shadow-md");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setBgColor("bg-white shadow-md");
-      } else {
-        setBgColor("bg-white");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div
-      className={`w-full font-sans fixed top-0 left-0 z-50 ${bgColor} text-black transition-all duration-300 ease-in-out`}
-    >
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
+    <div className="w-full fixed top-6 left-0 z-50 flex justify-center">
+      {/* Navbar Container with Rounded Corners & Shadow */}
+      <div className="flex justify-between items-center w-[90%] max-w-6xl bg-white shadow-lg rounded-full py-4 px-8">
         {/* Logo */}
-        <Link to="/">
-          <img src="/evool_t.png" alt="Evool Foundation" className="w-32" />
+        <Link to="/" className="flex items-center">
+          <img
+            src="/evool_t.png"
+            alt="Evool Foundation"
+            className="w-10 mr-2"
+          />
+          <span className="text-lg font-semibold">Evool Foundation</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -53,13 +43,16 @@ export default function Navbar() {
         {/* Contact Us Button */}
         <Link
           to="/contact-us"
-          className="hidden md:block bg-black text-white px-5 py-2 rounded-full text-lg font-medium hover:bg-gray-800"
+          className="hidden md:block bg-[#0B0D39] text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-gray-800 transition"
         >
           Contact us
         </Link>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div
+          className="md:hidden cursor-pointer"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
           {isMenuOpen ? (
             <img src="/close.png" alt="Close" className="w-6" />
           ) : (
@@ -83,7 +76,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md py-4 absolute w-full left-0 top-16">
+        <div className="md:hidden bg-white shadow-lg py-4 absolute w-[90%] max-w-6xl rounded-xl top-16">
           <div className="flex flex-col items-center space-y-4">
             {menuItems.map((item) => (
               <Link
