@@ -3,8 +3,8 @@ import React from "react";
 export default function GetInvolved() {
   return (
     <>
-      <div className="w-auto bg-[#EDF4FF] rounded-xl py-20 m-24">
-        <div className="flex flex-col lg:flex-row items-center justify-between w-[85%] mx-auto gap-10 md:gap-20">
+      <div className="w-auto bg-[#EDF4FF] rounded-xl py-24 m-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between w-[85%] mx-auto gap:10 md:gap-20">
           <div className="text-center">
             <h1 className="text-4xl sm:text-6xl font-semibold text-navy-900 mb-6">
               GET INVOLVED
