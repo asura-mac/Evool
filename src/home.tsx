@@ -7,6 +7,7 @@ import OurVision from "./section/OurVision";
 import OurProjects from "./section/OurProjects";
 import GetInvolved from "./section/GetInvolved";
 import NeedSupport from "./section/NeedSupport";
+import Donations from "./section/Donations"
 import Hero from "./section/Hero";
 import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
@@ -28,6 +29,7 @@ function HomePage() {
         <OurProjects />
         <GetInvolved />
         <NeedSupport />
+        <Donations />
       </div>
       <Footer />
     </div>
