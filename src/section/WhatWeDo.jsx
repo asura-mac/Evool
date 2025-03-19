@@ -12,36 +12,37 @@ export default function WhatWeDo() {
       </h1>
 
       {/* Cards Section */}
-      {/* because of justify items the third card is appearing in the center line of all images */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 w-[85%] mx-auto">
-        {/* Card 1 - Business Growth */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
-          <img
-            src={BusinessGrowthImage}
-            alt="Business Growth"
-            className="w-full h-48 object-cover rounded-xl mb-6"
-          />
+      <div className="flex flex-col md:flex-row justify-center items-stretch gap-10 w-[85%] mx-auto">
+        {/* Card 1 */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[450px]">
+          <div
+            className="w-full h-28 bg-cover bg-center rounded-t-2xl border mb-8"
+            style={{
+              backgroundImage: `url(${BusinessGrowthImage})`,
+            }}
+          ></div>
           <h2 className="text-xl font-semibold mb-4">
             How A Website Growths your Business
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 flex-grow">
             We create intuitive platforms that address everyday challenges,
             making life easier and more efficient. Our solutions are designed to
             offer practical benefits and improve daily routines.
           </p>
         </div>
 
-        {/* Card 2 - Job Opportunities */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
-          <img
-            src={JobOpportunitiesImage}
-            alt="Job Opportunities"
-            className="w-full h-48 object-cover rounded-xl mb-6"
-          />
+        {/* Card 2 - Creating Job Opportunities */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[450px]">
+          <div
+            className="w-full h-28 bg-cover bg-center rounded-t-2xl border mb-8"
+            style={{
+              backgroundImage: `url(${JobOpportunitiesImage})`,
+            }}
+          ></div>
           <h2 className="text-xl font-semibold mb-4">
-            Create Job Opportunities
+            Creating Job Opportunities
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 flex-grow">
             A core objective is to generate employment through the platforms we
             develop. By providing tools that help individuals and businesses
             operate more efficiently, we open doors to financial independence
@@ -49,17 +50,18 @@ export default function WhatWeDo() {
           </p>
         </div>
 
-        {/* Card 3 - Environmental Sustainability */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
-          <img
-            src={SustainabilityImage}
-            alt="Environmental Sustainability"
-            className="w-full h-48 object-cover rounded-xl mb-6"
-          />
+        {/* Card 3 - Promoting Sustainability */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[450px]">
+          <div
+            className="w-full h-28 bg-cover bg-center rounded-t-2xl border mb-8"
+            style={{
+              backgroundImage: `url(${SustainabilityImage})`,
+            }}
+          ></div>
           <h2 className="text-xl font-semibold mb-4">
-            Promote Environmental Sustainability
+            Promoting Sustainability
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 flex-grow">
             We design eco-friendly solutions that encourage sustainable living
             practices, contributing to environmental conservation.
           </p>
