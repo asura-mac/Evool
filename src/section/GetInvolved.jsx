@@ -18,33 +18,36 @@ export default function GetInvolved() {
           </div>
         </div>
       </div>
+      <h1 className="text-4xl sm:text-6xl font-semibold text-navy-900 mt-20 text-center">
+        WAYS TO GET INVOLVED
+      </h1>
       {/* cards */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 w-[85%] mx-auto">
-        {/* Card 1 - Business Growth */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
+      <div className="flex flex-col md:flex-row justify-center items-stretch gap-10 w-[85%] mx-auto m-24">
+        {/* Card 1 - Partner with Us */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[250px]">
           <h2 className="text-xl font-semibold mb-4">Partner with us</h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 flex-grow">
             Collaborate with us to develop new platforms that address critical
             social and environmental needs.
           </p>
         </div>
 
-        {/* Card 2 - Job Opportunities */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
+        {/* Card 2 - Volunteer */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[250px]">
           <h2 className="text-xl font-semibold mb-4">
             Volunteer your time and expertise
           </h2>
-          <p className="text-gray-600">
-            If you're passionate about technology, sustainability or community
+          <p className="text-gray-600 flex-grow">
+            If you're passionate about technology, sustainability, or community
             development, we'd love to have your support.
           </p>
         </div>
 
-        {/* Card 3 - Environmental Sustainability */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm text-center">
-          <h2 className="text-xl font-semibold mb-4">Become s supporter</h2>
-          <p className="text-gray-600">
-            Weather through financial contributions of spreading the world, your
+        {/* Card 3 - Supporter */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[250px]">
+          <h2 className="text-xl font-semibold mb-4">Become a supporter</h2>
+          <p className="text-gray-600 flex-grow">
+            Whether through financial contributions or spreading the word, your
             support helps us continue developing platforms that improve lives
             and care for the planet.
           </p>
