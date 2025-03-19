@@ -8,68 +8,62 @@ export default function Donations() {
           HOW YOUR DONATIONS MAKE A DIFFERENCE
         </h1>
 
-        {/* Cards Section */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-10 w-[85%] mx-auto">
+        {/* cards */}
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-10 w-[85%] mx-auto m-24">
           {/* Card 1 - Empowering Communities */}
-          <div className="bg-white rounded-2xl shadow-lg max-w-sm text-center">
+          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[400px]">
             <div
-              className="w-full h-28 bg-cover bg-center rounded-t-2xl"
+              className="w-full h-28 bg-cover bg-center rounded-t-2xl border"
               style={{
                 backgroundImage: "url('/img/1_5oV6570O4NMY5lAK4PRXnA@2x.png')",
               }}
             ></div>
-            <div className="p-8">
-              <h2 className="text-xl font-semibold mb-4">
-                Empowering Communities
-              </h2>
-              <p className="text-gray-600">
-                By supporting our projects, you help us create user-friendly
-                platforms that make life easier and more efficient for
-                individuals and businesses.
-              </p>
-            </div>
+            <h2 className="text-xl font-semibold mb-4">
+              Empowering Communities
+            </h2>
+            <p className="text-gray-600 flex-grow">
+              By supporting our projects, you help us create user-friendly
+              platforms that make life easier and more efficient for individuals
+              and businesses.
+            </p>
           </div>
 
           {/* Card 2 - Creating Job Opportunities */}
-          <div className="bg-white rounded-2xl shadow-lg max-w-sm text-center">
+          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[400px]">
             <div
-              className="w-full h-28 bg-cover bg-center rounded-t-2xl"
+              className="w-full h-28 bg-cover bg-center rounded-t-2xl border"
               style={{
                 backgroundImage: "url('/img/1_5oV6570O4NMY5lAK4PRXnA@2x.png')",
               }}
             ></div>
-            <div className="p-8">
-              <h2 className="text-xl font-semibold mb-4">
-                Creating Job Opportunities
-              </h2>
-              <p className="text-gray-600">
-                Your donations enable us to generate employment through the
-                platforms we develop, fostering financial independence and
-                long-term growth.
-              </p>
-            </div>
+            <h2 className="text-xl font-semibold mb-4">
+              Creating Job Opportunities
+            </h2>
+            <p className="text-gray-600 flex-grow">
+              Your donations enable us to generate employment through the
+              platforms we develop, fostering financial independence and
+              long-term growth.
+            </p>
           </div>
 
           {/* Card 3 - Promoting Sustainability */}
-          <div className="bg-white rounded-2xl shadow-lg max-w-sm text-center">
+          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-sm w-full text-center flex flex-col justify-between h-[400px]">
             <div
-              className="w-full h-28 bg-cover bg-center rounded-t-2xl"
+              className="w-full h-28 bg-cover bg-center rounded-t-2xl border"
               style={{
                 backgroundImage: "url('/img/1_5oV6570O4NMY5lAK4PRXnA@2x.png')",
               }}
             ></div>
-            <div className="p-8">
-              <h2 className="text-xl font-semibold mb-4">
-                Promoting Sustainability
-              </h2>
-              <p className="text-gray-600">
-                We design eco-friendly solutions that encourage sustainable
-                living practices. Our initiatives help conserve natural
-                resources, reduce waste, and contribute to a healthier
-                environment overall. By promoting digital solutions, we aim to
-                create a more sustainable future for everyone.
-              </p>
-            </div>
+            <h2 className="text-xl font-semibold mb-4">
+              Promoting Sustainability
+            </h2>
+            <p className="text-gray-600 flex-grow">
+              We design eco-friendly solutions that encourage sustainable living
+              practices. Our initiatives help conserve natural resources, reduce
+              waste, and contribute to a healthier environment overall. By
+              promoting digital solutions, we aim to create a more sustainable
+              future for everyone.
+            </p>
           </div>
         </div>
       </div>
