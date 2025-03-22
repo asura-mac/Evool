@@ -1,7 +1,7 @@
 import React from "react";
-import BusinessGrowthImage from "../assets/about.png";
-import JobOpportunitiesImage from "../assets/about.png";
-import SustainabilityImage from "../assets/about.png";
+import BusinessGrowthImage from "../assets/BusinessGrowth.png";
+import JobOpportunitiesImage from "../assets/JobOpportunities.png";
+import SustainabilityImage from "../assets/EnvironmentSustainability.png";
 
 export default function WhatWeDo() {
   return (
