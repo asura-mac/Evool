@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
           <div className="relative rounded-lg overflow-hidden shadow-lg max-w-[500px]">
             <img
-              src="/evool_b.jpg"
+              src="/landing_image.png"
               alt="Event"
               className="w-full h-auto rounded-lg"
             />
