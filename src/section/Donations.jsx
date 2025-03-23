@@ -79,9 +79,6 @@ export default function Donations() {
           Donate Now and be a part of the{" "}
           <span className="text-[#008cff]">CHANGE!</span>
         </h2>
-        <button className="mt-6 bg-[#008cff] text-white text-lg font-semibold px-12 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
-          Donate
-        </button>
       </div>
     </>
   );
